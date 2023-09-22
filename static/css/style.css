@@ -1,0 +1,33 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+.image-item img{
+    width: 100%;
+    height: auto;
+}
+.highlight-item{
+    height: 300px;
+    width: auto;
+}
+.about, .contact{
+    min-height: 70vh;
+}
+.background-black{
+    background-color: black;
+}
+.no-border{
+    border: 0px;
+    border-radius: 0%;
+    border-width: 0ch;
+    -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media only screen and (max-width: 600px) {
+    .name-heading{
+        font-size: 3rem;
+    }    
+    tagline-heading{
+        font-size: 2rem;
+    }
+}

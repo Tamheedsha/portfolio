@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="">
+  {% include "head.html" %}
+  {% include "header.html" %}
+  <body>
+    <!-- Start your project here-->
+    <main class="mt-2 mb-3">
+        
+        {% include 'highlights.html' %}
+        
+    </main>
+
+    <div class="container about d-flex align-items-center" style="overflow: hidden;">
+        <div>{% include "about.html" %}</div>
+      <hr class="between-sections">        
+    </div>
+    <div class="container-fluid contact">{% include "contact.html" %}</div>
+      
+      
+      
+        </main>
+      {% include "footer.html" %}
+      
+        <!-- <div class="dotted-scrollspy clearfix d-none d-sm-block">
+          <ul class="nav smooth-scroll flex-column">
+            <li class="nav-item"><a class="nav-link" href="#highlights"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+          </ul>
+        </div> -->
+    <!-- End your project here-->'
+    {% include "scripts.html" %}   
+    
+
+{% if email_sent == 1 %}
+{% include "email-confirm-modal.html" %}
+        <script>
+         $("#modal-toggle").click();
+        if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+          }
+        </script>
+        
+{% endif %}
+ 
+  </body>
+</html>

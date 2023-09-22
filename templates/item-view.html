@@ -1,0 +1,55 @@
+{% include 'head.html' %}
+{% include 'scripts.html' %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">PORTFOLIO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">All Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-5">
+      <h2 class="text-center w-100 mb-5">Here is the side to side comparison</h2>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6 image-item">
+            <h3 class="text-center w-100 mb-4">Original</h3>
+            <img src="{{ image.original.url }}" class="mb-4" alt="Original">
+            <div class="text-center">
+                <a href="{{ image.original.url }}"><button type="button" class="btn btn-primary">View in Original Quality</button></a>
+            </div>
+        </div>
+        <div class="col-md-6 image-item">
+            <h3 class="text-center w-100 mb-4">Retouched</h3>
+            <img src="{{ image.image.url }}"  class="mb-4" alt="{{ image.alt }}">
+            
+            <div class="text-center">
+                <a href="{{ image.image.url }}"><button type="button" class="btn btn-primary">View in Original Quality</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-md-around mt-4">
+        
+    </div>
+  </div>
